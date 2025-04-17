@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+
+        <!-- --------------------Home Section------------------------- -->
+        <div id="home" class="home">
+            <div class="navbar">
+                <input type="checkbox" name="" id="toggler">
+                <label for="toggler" class="fas fa-bars"></label>
+                <div class="logo">
+                    <img src="./Images/logo.png" alt="">
+                </div>
+                <nav class="mainMenu">
+                    <a href="#home" class="active">Home</a> <!-- Ensure href is "#home" -->
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#review">Review</a>
+                    <a href="#orderUs">Order</a>
+                    <a href="#ourTeam">Our Team</a>
+                </nav>
+                <div class="icons">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <button id="btnMode" onclick="lightDark()">Dark Mode</button>
+                </div>
+
+            </div>
+            <div class="hero">
+                <div class="text">
+                    <h4>Welcome to Rich Cuisine</h4>
+                    <h1>Rich Healthy and Natural Food</h1>
+                    <p>Rich Cuisine offers a delicious variety of quick and convenient fast food, including juicy burgers, crispy fries, and refreshing drinks, perfect for satisfying your cravings anytime.</p>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search Food">
+                        <button type="submit">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <!-- -------------------About Section------------------------ -->
+        <div class="about" id="about">
+            <div class="aboutImg">
+                <img src="./Images/aboutImage.png" alt="">
+            </div>
+            <div class="aboutContent">
+                <h1>About <span>Us</span></h1>
+                <h3>Why Choose us?</h3>
+                <p>At Rich Cuisine, we pride ourselves on offering a delectable variety of fast food that blends rich flavors with healthy ingredients. Located in the heart of Lahore, our restaurant is dedicated to providing our customers with an unforgettable dining experience. Our team of skilled chefs uses only the freshest ingredients to craft dishes that are not only delicious but also nutritious. Choose us for our commitment to quality, exceptional service, and a welcoming atmosphere that makes you feel right at home.</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <!-- --------------------Menu Section------------------------- -->
+        <div class="menu" id="menu">
+            <h1>Our <span>Menu</span></h1>
+            <div class="menuCards">
+                <div class="cards">
+                    <img src="./Images/burger/Burger01.webp" alt="">
+                    <h3>Burger</h3>
+                    <p>Juicy patty, fresh toppings, melted cheese—perfect burger indulgence in every bite.</p>
+                    <h4>RS:1200/</h4>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i><br>
+                    <button>Order Now</button>
+                </div>
+
+                <div class="cards">
+                    <img src="./Images/pasta/pasta.jpg" alt="">
+                    <h3>Pasta</h3>
+                    <p>Delicious pasta rich flavors, quick, satisfying, and perfect for any craving.</p>
+                    <h4>RS:1200/</h4>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i><br>
+                    <button>Order Now</button>
+                </div>
+                <div class="cards">
+                    <img src="./Images/pasta/lasange.jpg" alt="">
+                    <h3>Lasanga</h3>
+                    <p>Lasagna layers of pasta, rich sauce, melted cheese, and hearty goodness.</p>
+                    <h4>RS:1300/</h4>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i><br>
+                    <button>Order Now</button>
+                </div>
+                <div class="cards">
+                    <img src="./Images/pasta/shwarma.jpg" alt="">
+                    <h3>Shawarma</h3>
+                    <p>Juicy patty, fresh toppings, melted cheese—perfect burger indulgence in every bite.</p>
+                    <h4>RS:700/</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i><br>
+                    <button>Order Now</button>
+                </div>
+                <div class="cards">
+                    <img src="./Images/pizza/pizza.avif" alt="">
+                    <h3>Pizza</h3>
+                    <p>Pizza with crispy crust, melted cheese, savory toppings, pure indulgence.</p>
+                    <h4>RS:2500/</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i><br>
+                    <button>Order Now</button>
+                </div>
+                <div class="cards">
+                    <img src="./Images/pasta/rollParatha.jpg" alt="">
+                    <h3>Paratha Roll</h3>
+                    <p>Paratha roll with flavorful fillings, flaky bread, delicious and satisfying snack.</p>
+                    <h4>RS:700/</h4>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i><br>
+                    <button>Order Now</button>
+                </div>
+                <div class="cards">
+                    <img src="./Images/pasta/sandwich.jpg" alt="">
+                    <h3>Sandwich</h3>
+                    <p>Sandwich with fresh layers, flavorful ingredients, and perfect for any meal.</p>
+                    <h4>RS:700/</h3>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i><br>
+                    <button>Order Now</button>
+                </div>
+                <div class="cards">
+                    <img src="./Images/pasta/juice.jpg" alt="">
+                    <h3>Juice</h3>
+                    <p>Fresh, flavorful juices offer refreshing hydration and essential nutrients daily.</p>
+                    <h4>RS:500/</h4>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i></i><br>
+                    <button>Order Now</button>
+                </div>
+
+            </div>
+        </div>
+        <!-- --------------------Our Gallery-------------------------- -->
+        <div class="gallery" id="gallery">
+            <h1>Our <span>Gallery</span></h1>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./Images/Gallery/image01.jpg" alt="Sandwich">
+                    <div class="overlay">
+                        <div class="imgtext">Sandwich</div>
+                        <div class="btn">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Images/Gallery/image02.jpg" alt="Pizza">
+                    <div class="overlay">
+                        <div class="imgtext">Pizza</div>
+                        <div class="btn">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Images/Gallery/image07.jpg" alt="HotDog">
+                    <div class="overlay">
+                        <div class="imgtext">HotDog</div>
+                        <div class="btn">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Images/Gallery/Image04.jpg" alt="Burger">
+                    <div class="overlay">
+                        <div class="imgtext">Burger</div>
+                        <div class="btn">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Images/Gallery/image05.jpg" alt="Shawarma">
+                    <div class="overlay">
+                        <div class="imgtext">Shawarma</div>
+                        <div class="btn">
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./Images/Gallery/image06.jpg" alt="Cakes">
+                    <div class="overlay">
+                        <div class="imgtext">Cakes</div>
+                        <div class="btn">
+                            <button>Order Now</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ---------------------Customer Review--------------------- -->
+        <div class="customer" id="review">
+            <h1>Customer <span>Review</span></h1>
+            <div class="reviewCards">
+        
+                <!-- First review card -->
+                <div class="revCard">
+                    <div class="cusImage">
+                        <img src="./Images/customer/customer-01.jpg" alt="Customer Image">
+                    </div>
+                    <div class="cusName">Michael Brown</div>
+                    <div class="starIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                    </div>
+                    <div class="socialIcon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <p data-short-text="The food here is exceptional! The burgers are juicy, the fries are crispy, and the milkshakes are out of this world." data-full-text="The food here is exceptional! The burgers are juicy, the fries are crispy, and the milkshakes are out of this world. The restaurant is clean, and the atmosphere is relaxed. I’ve tried several fast food places, but this one stands out for quality and service.">The food here is exceptional! The burgers are juicy, the fries are crispy, and the milkshakes are out of this world.</p>
+                    <button class="btnSR">Read More</button>
+                </div>
+        
+                <!-- Second review card -->
+                <div class="revCard">
+                    <div class="cusImage">
+                        <img src="./Images/customer/customer-02.jpg" alt="">
+                    </div>
+                    <div class="cusName">Sarah Williams</div>
+                    <div class="starIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                    </div>
+                    <div class="socialIcon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <p data-short-text="This place has quickly become my favorite spot for fast food. The menu offers a great variety, and everything I've tried has been delicious." data-full-text="This place has quickly become my favorite spot for fast food. The menu offers a great variety .The chicken sandwich is perfectly seasoned, and the fries are always fresh. I appreciate the attention to detail in both the food and the customer service.">This place has quickly become my favorite spot for fast food. The menu offers a great variety, and everything I've tried has been delicious.</p>
+                    <button class="btnSR">Read More</button>
+                </div>
+        
+                <!-- Third review card -->
+                <div class="revCard">
+                    <div class="cusImage">
+                        <img src="./Images/customer/customer-03.jpg" alt="">
+                    </div>
+                    <div class="cusName">James Anderson</div>
+                    <div class="starIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                    </div>
+                    <div class="socialIcon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <p data-short-text="I’m thoroughly impressed with the quality of food and service here. The burgers are cooked to perfection, and the ingredients are always fresh." data-full-text="I’m thoroughly impressed with the quality of food and service here. The burgers are cooked to perfection, and the ingredients are always fresh. The staff is attentive and ensures that your order is just right. I highly recommend it to anyone craving fast food.">I’m thoroughly impressed with the quality of food and service here. The burgers are cooked to perfection, and the ingredients are always fresh.</p>
+                    <button class="btnSR">Read More</button>
+                </div>
+        
+                <!-- Fourth review card -->
+                <div class="revCard">
+                    <div class="cusImage">
+                        <img src="./Images/customer/customer-04.jpg" alt="">
+                    </div>
+                    <div class="cusName">Emily Johnson</div>
+                    <div class="starIcon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i><br>
+                    </div>
+                    <div class="socialIcon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <p data-short-text="From the moment you walk in, you’re greeted with a warm smile. The food is consistently excellent; the chicken wings are crispy." data-full-text="From the moment you walk in, you’re greeted with a warm smile. The food is consistently excellent; the chicken wings are crispy, and the burgers are full of flavor. Whether you’re dining in or taking out, the experience is always satisfying. A true gem!">From the moment you walk in, you’re greeted with a warm smile. The food is consistently excellent; the chicken wings are crispy.</p>
+                    <button class="btnSR">Read More</button>
+                </div>
+        
+            </div>
+        </div>
+        
+        <!-- ====================== Order Now (Starts)======================== -->
+        <div class="OrderUs" id="orderUs">
+            <h1>Order <span>Now</span></h1>
+            <div class="orderContent">
+                <div class="orderImg">
+                    <img src="./Images/OrderNow.png" alt="resturant table image">
+                </div>
+                <form action="">
+                    <div class="input">
+                        <label for="">Name</label><br>
+                        <input type="text" placeholder="Your Name" >
+                    </div>
+                    <div class="input">
+                        <label for="">Email</label><br>
+                        <input type="email" placeholder="Your Email" >
+                    </div>
+                    <div class="input">
+                        <label for="">Phone No.</label><br>
+                        <input  placeholder="Your Phone No." >
+                    </div>
+                    <div class="input">
+                        <label for="">How Much</label><br>
+                        <input type="number" placeholder="How many orders" >
+                    </div>
+                    <div class="input">
+                        <label for="">Your Order</label><br>
+                        <input type="text" placeholder="Food Name" >
+                    </div>
+                    <div class="input">
+                        <label for="">Address</label><br>
+                        <input type="text" placeholder="Your Address " >
+                    </div>
+                    <a href="#" class="orderBtn">Order Now</a>
+
+                </form>
+            </div>
+
+        </div>
+        <!-- ====================== Order Now (Ends)======================== -->
+
+        <!-- ======================Our Team (Starts)========================= -->
+        <div class="ourTeam" id="ourTeam">
+            <h1>Our <span>Team</span></h1>
+            <div class="teamCards">
+                <div class="chefProfile">
+                    <img src="./Images/chefs/chefs-1.jpg" alt="">
+                    <div class="chefInfo">
+                        <h2>Chef Max</h2>
+                        <p>Crafts delightful fast food with creative flair.</p>
+                        <div class="chefIcon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="chefProfile">
+                    <img src="./Images/chefs/chefs-3.jpg" alt="">
+                    <div class="chefInfo">
+                        <h2>Chef Ava</h2>
+                        <p>Expertly prepares quick, gourmet meals with love.</p>
+                        <div class="chefIcon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="chefProfile">
+                    <img src="./Images/chefs/chefs-2.jpg" alt="">
+                    <div class="chefInfo">
+                        <h2>Chef Zoe</h2>
+                        <p>Expertly bakes cakes that are irresistibly delicious.</p>
+                        <div class="chefIcon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="chefProfile">
+                    <img src="./Images/chefs/chefs-4.jpg" alt="">
+                    <div class="chefInfo">
+                        <h2>Chef Leo</h2>
+                        <p>Delivers fresh, bold flavors in every dish.</p>
+                        <div class="chefIcon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <!-- ======================Our Team (Ends)========================= -->
+    </div>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="footerCards">
+                <div class="footerHeading">Location</div>
+            
+                    <p>Lahore</p>
+                    <p>Karachi</p>
+                    <p>Gujranwala</p>
+                    <p>Faisalabad</p>
+                    <p>Islamabad</p>
+            </div>
+
+            <div class="footerCards">
+            <div class="footerHeading">Quick Links</div>
+                <nav class="Links">
+                    <a href="#" class="active">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Review</a>
+                    <a href="#">Order</a>
+                </nav>
+            </div>
+            <div class="footerCards">
+                <div class="footerHeading">Contact</div>
+                <p>+92 12 3456 789</p>
+                <p>+92 25 5432 987</p>
+                <p>fastfood@gmail.com</p>
+                <p>richcuisine@gmail.com</p>
+            </div>
+            <div class="footerCards">
+                <div class="footerHeading">Our Services</div>
+                <p>Fast Delivery</p>
+                <p>Easy Payment</p>
+                <p>24 x 7 Services</p>
+            </div>
+            <div class="footerCards">
+                <div class="footerHeading">Follow Us</div>
+                <div class="footericon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+            
+        </div>
+        <div class="copyright">
+            &copy; 2024 Rich Cuisine. All rights reserved.
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./javaScript.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,798 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+/* ========================= Home =========================== */
+
+.navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0; right: 0;left: 0;
+    padding: .8rem 3%;
+    background-color: rgb(255, 145, 0);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+/* Togglers */
+.navbar #toggler{
+    display: none;
+}
+.navbar .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solidrgba(0,0,0,.3);
+    display: none;
+}
+
+
+.logo img {
+    width: 80px;
+    height:30;
+    cursor: pointer;
+}
+
+.mainMenu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    margin-left: 25px;
+    text-align: center;
+    position: relative; 
+    padding-bottom: 5px; 
+    transition: color 0.3s ease; 
+}
+
+.mainMenu a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.mainMenu a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.mainMenu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.mainMenu a:hover::after {
+    width: 100%; 
+}
+
+
+.navbar .icons i {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.navbar .icons button {
+    padding: 10px 13px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+.navbar .icons button:hover {
+    color: white;
+    background-color: black;
+}
+
+.hero{
+    background: rgba(0,0,0,0.2);
+    background-image: url("https://img.freepik.com/premium-photo/banner-flat-lay-with-copy-space-burger-hot-dog-pizza-black-background_894279-6003.jpg?w=740");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    color: white;
+    padding: 200px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px
+}
+.text h4{
+    font-size: 20px;
+}
+.text h1{
+    color: orange;
+    font-size: 50px;
+}
+.text p{
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.4;
+    width: 520px;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    background-color: white;
+    width: 45%;
+    text-align: left;
+    height: 45px;
+    border-radius: 2px;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 7px;
+    border: none;
+    display: inline-block;
+}
+
+.search-bar button {
+    width: 26%;
+    padding: 8px;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.search-bar button:hover{
+    color: orange;
+    background-color: black;
+}
+/* ============================== About ================================= */
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .aboutImg{
+    padding-left: 60px;
+
+}
+.about .aboutImg img{
+   
+    width:500px;
+    height: 450px;
+
+}
+.about .aboutContent{
+    margin: 60px 40px 0px 100px;
+
+}
+.about .aboutContent h1{
+    font-size: 50px;
+    margin-top: 40px;
+}
+.about .aboutContent h1 span{
+    font-family: mv boli;
+    font-size: 50px;
+    color: orange;
+    display: inline-block;
+}
+.about .aboutContent h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: orange;
+    display: block;
+    position: relative;
+    bottom: 15px
+}
+.about .aboutContent h3{
+    font-size: 30px;
+    margin: 40px auto;
+}
+.about .aboutContent p{
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.about .aboutContent button{
+    color: white;
+    background-color: orange;
+    border: none;
+    font-size: 18px;
+    padding: 10px 25px;
+    margin: 60px auto;
+    cursor: pointer;
+}
+.about .aboutContent button:hover{
+    color: black;
+    background-color: orange;
+    box-shadow: 0px 5px 10px 0px rgba(255, 166, 0, 0.886);
+}
+
+/* =========================== Menu =========================== */
+.menu{
+    width: 100%;
+    padding: 40px 20px;
+}
+.menu h1{
+    font-size: 50px;
+    text-align: center;
+    margin: 30px auto 20px auto;
+}
+.menu h1 span {
+    font-family: mv boli;
+    font-size: 50px;
+    color: orange;
+    display: inline-block;
+}
+
+.menu h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: orange;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.menu .menuCards{
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    justify-content: center; 
+    gap: 25px;
+}
+.menu .menuCards .cards{
+    text-align: center;
+    width: 300px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    overflow: hidden;   
+}
+.menu .menuCards .cards img{
+    width: 270px;
+    height: 230px;
+    margin: 10px;
+
+}
+.menu .menuCards .cards:hover img{
+    transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+}
+.menu .menuCards .cards  h3{
+    font-size: 22px;
+    font-weight: bolder;
+    color: orange;
+
+}
+.menu .menuCards .cards  p{
+    color: black;
+    font-size: 15px;
+    margin: 5px auto;
+    padding: 0 10px;
+}
+.menu .menuCards .cards  h4{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px auto;
+}
+.menu .menuCards .cards i{
+    color: rgb(255, 208, 0);
+    margin-bottom: 7px;
+}
+
+.menu .menuCards .cards button{
+    margin-bottom: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 15px;
+    padding: 7px 25px;
+    cursor: pointer;
+}
+.menu .menuCards .cards button:hover{
+    color: black;
+    background-color: orange;
+}
+/* ------------------------Our Gallery------------------------------- */
+
+.gallery {
+    padding: 40px 20px;
+    text-align: center;
+}
+.gallery h1 {
+    font-size: 50px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.gallery h1 span {
+    font-family: 'MV Boli';
+    font-size: 50px;
+    color: orange;
+    display: inline-block;
+}
+
+.gallery h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: orange;
+    display: block;
+    position: relative;
+    bottom: 10px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 20px 50px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 45vh;
+    display: block;
+    object-fit: cover;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+.imgtext {
+    color:orange;
+    font-size: 25px;
+    font-family: mv boli;
+    margin-top: 100px;
+}
+.overlay .btn button{
+    margin-top: 10px;
+    color: white;
+    background-color: orange;
+    border: none;
+    font-size: 15px;
+    padding: 8px 20px;
+    cursor: pointer;
+}
+.overlay .btn button:hover{
+    color: orange;
+    background-color: black;
+}
+
+/* ----------------------Customer Review---------------------- */
+.customer{
+    padding:40px 20px;
+}
+.customer h1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 30px auto 20px auto;
+}
+
+.customer h1 span {
+    font-family: 'MV Boli';
+    font-size: 50px;
+    color: orange;
+    display: inline-block;
+}
+
+.customer h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: orange;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.customer .reviewCards{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 7px;
+    
+}
+.customer .reviewCards .revCard{
+    background-color: white;
+    color: black;
+    width: 300px;
+    height: auto;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.customer .reviewCards .revCard .cusImage{
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.customer .reviewCards .revCard:hover .cusImage {
+    transform: translateY(-50px);
+}
+
+.customer .reviewCards .revCard img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border: 4px solid rgba(0, 0, 0, 0.3);
+}
+
+.customer .reviewCards .revCard .cusName{
+    font-size: 20px;
+    font-weight: 600;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.customer .reviewCards .revCard:hover .cusName{
+    transform: translateY(-40px);
+}
+.customer .reviewCards .revCard .starIcon{
+    color: orange;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.customer .reviewCards .revCard:hover .starIcon{
+    transform: translateY(-30px);
+
+}
+.customer .reviewCards .revCard .socialIcon {
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;  }
+  .customer .reviewCards .revCard:hover .socialIcon {
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+
+.customer .reviewCards .revCard p{
+    font-size: 16px;
+    line-height: 1.4;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.customer .reviewCards .revCard:hover p{
+    transform: translateY(5px);
+
+}
+.customer .reviewCards .revCard button{
+    padding: 8px 15px;
+    color: white;
+    background-color: black;
+    border: none;
+    margin: 15px auto;
+}
+.customer .reviewCards .revCard button:hover{
+    color: black;
+    background-color: orange;
+}
+
+/* =========================Order Now(starts)=========================== */
+.OrderUs{
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.OrderUs h1 {
+    font-size: 50px;
+    margin-top: 40px ;
+    text-align: center;
+}
+
+.OrderUs h1 span {
+    font-family: 'MV Boli';
+    font-size: 50px;
+    color: orange;
+    display: inline-block;
+}
+
+.OrderUs h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: orange;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.OrderUs .orderContent{
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.OrderUs .orderContent .orderImg{
+    width: 500px;
+    height: 500px;
+}
+.OrderUs .orderContent .orderImg img{
+    width: 100%;
+    height: 100%;
+}
+.OrderUs .orderContent form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    gap: 10px;
+}
+.OrderUs .orderContent form .input{
+    margin: 5px;
+}
+.OrderUs .orderContent form .input label{
+    line-height: 25px;
+
+}
+.OrderUs .orderContent form .input input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #cccccc;
+    background: #eeeeee;
+    border-radius: 3px;
+    outline: none;
+}
+.OrderUs .orderContent form .input input:focus{
+    border: 3px solid rgb(255, 190, 70);
+}
+
+.OrderUs .orderContent form .orderBtn{
+    padding: 10px 0;
+    width: 40%;
+    padding: 8px;
+    background-color:orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+}
+.OrderUs .orderContent form .orderBtn:hover{
+    color: black;
+    background-color: orange;
+    box-shadow: 0px 5px 10px 0px rgba(255, 166, 0, 0.886);
+    
+}
+
+/* ==========================Our Team============================ */
+.ourTeam{
+    width: 100%;
+    padding: 40px 20px;
+    height: 80vh;
+}
+.ourTeam h1{
+    font-size: 50px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ourTeam h1 span {
+    font-family: 'MV Boli';
+    font-size: 50px;
+    color: orange;
+    display: inline-block;
+}
+
+.ourTeam h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: orange;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+.ourTeam .teamCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 100px auto;
+}
+
+.ourTeam .teamCards .chefProfile {
+    width: 220px;
+    height: 220px;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    border: 20px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.ourTeam .teamCards .chefProfile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.ourTeam .teamCards .chefProfile:hover img {
+    transform: translateY(-80px);
+    border-radius: 10px;
+    z-index: 3;
+}
+.ourTeam .teamCards .chefProfile:hover {
+    transform: translateY(-50px);
+    border-radius: 10px;
+}
+.ourTeam .teamCards .chefProfile .chefInfo{
+    padding: 5px;
+    margin-top: -80px;
+}
+.ourTeam .teamCards .chefProfile .chefInfo h2{
+    font-size: 18px;
+    color: orange;
+}
+.ourTeam .teamCards .chefProfile .chefInfo p{
+    margin: 10px auto;
+    line-height: 0.9;
+    font-size: 14px;
+}
+.ourTeam .teamCards .chefProfile .chefIcon,
+.ourTeam .teamCards .chefProfile h2,
+.ourTeam .teamCards .chefProfile p{
+    opacity: 0;
+}
+.ourTeam .teamCards .chefProfile:hover .chefIcon,
+.ourTeam .teamCards .chefProfile:hover h2,
+.ourTeam .teamCards .chefProfile:hover p{
+    opacity: 1;
+    transform: translateY(5px);
+}
+.ourTeam .teamCards .chefProfile .chefIcon{
+    bottom: 10px;
+}
+.ourTeam .teamCards .chefProfile .chefIcon i:hover{
+    color: orange;
+    cursor: pointer;
+}
+
+/* ========================Footer=========================== */
+footer{
+    background-color: rgb(225, 225, 225);   
+}
+footer .footerContainer{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+footer .footerContainer .footerCards{
+    width: 100%;
+    height: 40vh;
+    padding: 10px 50px;
+    text-align: center;
+}
+footer .footerContainer .footerCards .footerHeading{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px auto;
+}
+
+.footer .footerContainer .footerCards .Links a::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: orange;
+    display: block;
+    position: relative;
+    bottom: 10px;
+}
+
+footer .footerContainer .footerCards p{
+    font-size: 17px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+footer .footerContainer .footerCards .Links{
+    display: flex;
+    flex-flow: column;
+}
+footer .footerContainer .footerCards .Links a{
+    line-height: 1.5;
+    color: black;
+}
+footer .footerContainer .footerCards .footericon i{
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+footer .footerContainer .footerCards .footericon i:hover{
+    transform: translateY(-6px);
+    transition: all 0.3s ease-in-out;
+
+}
+footer .footerContainer .footerCards .Links a{
+    text-decoration: none;
+}
+footer .copyright{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
